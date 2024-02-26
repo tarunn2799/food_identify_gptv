@@ -27,7 +27,7 @@ st.session_state['api_key'] = st.secrets['OPENAI_KEY']
 # api_key_input = api_key_placeholder.text_input("Enter your OPENAI API Key", type="password", key="api_input")
 
 if 'api_key' in st.session_state:
-    st.success("API Key is set. You can now upload images.")
+        st.success("API Key is set. You can now upload images.")
     #st.button("Set API Key") or 
     # if api_key_input:
         # st.session_state['api_key'] = api_key_input
