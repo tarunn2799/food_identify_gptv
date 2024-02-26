@@ -23,8 +23,8 @@ st.title("Image Analysis App")
 st.session_state['api_key'] = st.secrets['OPENAI_KEY']
 
 # Input for OpenAI API Key
-api_key_placeholder = st.empty()
-api_key_input = api_key_placeholder.text_input("Enter your OPENAI API Key", type="password", key="api_input")
+# api_key_placeholder = st.empty()
+# api_key_input = api_key_placeholder.text_input("Enter your OPENAI API Key", type="password", key="api_input")
 
 if st.button("Set API Key") or 'api_key' in st.session_state:
     if api_key_input:
