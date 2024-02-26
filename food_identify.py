@@ -20,6 +20,8 @@ def get_response(api_key, image_path, prompt):
 # Streamlit app starts here
 st.title("Image Analysis App")
 
+st.session_state['api_key'] = st.secrets['OPENAI_KEY']
+
 # Input for OpenAI API Key
 api_key_placeholder = st.empty()
 api_key_input = api_key_placeholder.text_input("Enter your OPENAI API Key", type="password", key="api_input")
