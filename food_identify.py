@@ -27,9 +27,9 @@ st.session_state['api_key'] = st.secrets['OPENAI_KEY']
 # api_key_input = api_key_placeholder.text_input("Enter your OPENAI API Key", type="password", key="api_input")
 
 if st.button("Set API Key") or 'api_key' in st.session_state:
-    if api_key_input:
-        st.session_state['api_key'] = api_key_input
-        api_key_placeholder.empty()  # Remove the input box after setting the API key
+    # if api_key_input:
+        # st.session_state['api_key'] = api_key_input
+        # api_key_placeholder.empty()  # Remove the input box after setting the API key
         st.success("API Key is set. You can now upload images.")
 
         # Image Upload
